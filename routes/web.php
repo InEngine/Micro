@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'Web\PageController@home');
+
+Route::get('/{page}', 'Web\PageController@route');
